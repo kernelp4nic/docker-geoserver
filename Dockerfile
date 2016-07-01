@@ -111,7 +111,7 @@ RUN if [ "$TOMCAT_EXTRAS" = false ]; then \
     rm -rf $CATALINA_HOME/webapps/manager; \
   fi;
 
-VOLUME ["/opt/geoserver/data_dir"]
+VOLUME ["/root"]
 
 # Delete resources after installation
 RUN rm -rf /tmp/resources
